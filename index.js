@@ -32,7 +32,7 @@ async function run (){
             const query={_id:ObjectId(id)};
             const service = await serviceCollection.findOne(query);
             res.send(service);
-        })        
+        });       
     }
     finally{
        
